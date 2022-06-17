@@ -48,7 +48,7 @@ export const useDimension = () => {
 
 const sinify = (scale : number) : number => Math.sin(scale * Math.PI)
 
-const useStyle = (w : number, h : number, scale : number) => {
+export const useStyle = (w : number, h : number, scale : number) => {
     const position = "absolute"
     const size = Math.min(w, h) / 10
     const sf : number = sinify(scale)
