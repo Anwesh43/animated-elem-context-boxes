@@ -91,13 +91,15 @@ export const useStyle = (w : number, h : number, scale : number) => {
             const width = `${size}px`
             const height = `${size / 10}px`
             const transform = `rotate(${90 * sf}deg)`
+            const background = "indigo"
             return {
                 position, 
                 top, 
                 left,
                 width, 
                 height, 
-                transform 
+                transform,
+                background
             }
         }
     }
