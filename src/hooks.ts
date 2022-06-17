@@ -15,6 +15,7 @@ export const useAnimatedScale = () => {
                     setScale((prev : number) => {
                         if (prev > 1) {
                             setScale(0)
+                            setAnimated(false)
                             clearInterval(interval)
                             return 0 
                         }
